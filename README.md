@@ -4,7 +4,7 @@ Theme Wordpress "Material Design" Based on Google Material design
 - https://design.google.com
 - https://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html
 
-## Instalation
+## Configuration
 - On menu Settings -> in the "reading" you select option "A static page (select below)" in the "Front page displays"
 - For the "Front Page" select menu home
 - For "Posts page" menu select the blog
