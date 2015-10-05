@@ -4,6 +4,14 @@ Theme Wordpress "Material Design" Based on Google Material design
 - https://design.google.com
 - https://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html
 
+## Instalation
+- On menu Settings -> in the "reading" you select option "A static page (select below)" in the "Front page displays"
+- For the "Front Page" select menu home
+- For "Posts page" menu select the blog
+- Save, finish.
+
+## Screenshot
+
 #### Front page
 ![Demo img](https://lh3.googleusercontent.com/RJVjJAtTMkmRRKvzhCr6gLWh96hee6EArtNbjfxS6PNcleLmXtSdUlebUcesCZGttDf27uKSaNnYLLhqrPzvOHTtjJGkV5JtiYKGeXvMnjoYXZr4yAMOOteZ3wjxNWz7-ZT4PdJf1Tfe1Y4GuJc9aWjglWdl7Gi8Aqv8nE-Mg7wuAEwwSQKhibC6IMQtgKXYFmmTta00pgDHD29_vueyPeMM1-axbqVtTJEZ7zjB9XOyCPS-otjk8RB9YCLyMKLwCbKC0n_gsy61vZD_PMImT5vRpvKLzx0KTWm__Ttj3ZMtDOKDjT8kwko-V9WJFPHEJj7pvWvMm9VgfC1W_8BkWR3Xe4HgmQc8V1YevHptBFLaEvNv4NWsGSolrhiUcRPBUQwAIIvi6NKo5mQQyN4ZqePPJTqV2lQK4pOVUZEYnNkEOdtIIFtg-4vse6JiIdGXCnrsqOB3tf18vfP5Wv61w8qEMdsbc6Mq4FYIapltuBQz0qhYuInVOvKip49OrXVVabuJYeGi1nF2PBFnpaQ9U4ED6285Xs3Bl7WTfSv0VdE=w1349-h626-no)
 
