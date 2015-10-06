@@ -4,8 +4,8 @@ Theme Wordpress "Material Design" Based on Google Material design
 - https://design.google.com
 - https://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html
 
-## Support
-### Post Format
+## Theme Support
+#### Post Format
 - Stardard
 - Aside (comming soon)
 - Gallery (comming soon)
@@ -16,13 +16,22 @@ Theme Wordpress "Material Design" Based on Google Material design
 - Video (comming soon)
 - Audio (comming soon)
 
-### post thumbnail
+#### post thumbnail
+- featured image
+- Auto crop
 
 ## Configuration
 - On menu Settings -> in the "reading" you select option "A static page (select below)" in the "Front page displays"
 - For the "Front Page" select menu home
 - For "Posts page" menu select the blog
 - Save, finish.
+
+## Change Log
+#### 1.0
+- Featured image
+- Auto crop featured image
+- Share button
+- Design material
 
 ## Screenshot
 
