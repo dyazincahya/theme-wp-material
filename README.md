@@ -4,6 +4,9 @@ Theme Wordpress "Material Design" Based on Google Material design
 - https://design.google.com
 - https://fezvrasta.github.io/bootstrap-material-design/bootstrap-elements.html
 
+##New Version :
+https://github.com/dyazincahya/theme-wp-material-awesome
+
 ## Theme Support
 #### Post Format
 - Stardard
