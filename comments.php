@@ -2,8 +2,8 @@
 	if ( post_password_required() )
 		return;
 ?>
-
-<div id="comments" class="comments-area">
+<div class="container">
+		<section class="content-inner">
 
 	<?php if ( have_comments() ) : ?>
 		<div class="alert alert-success">
@@ -13,17 +13,17 @@
 			?>
 		</div>
 
-		<ol type="A" class="comment-list" >
+		<ul class="comment-list" >
 			<?php
 				wp_list_comments( array(
-					'style'       => 'ol',
+					'style'       => 'ul',
 					'short_ping'  => true,
 					'reverse_top_level' => null,
 					'per_page' => 5, //Allow comment pagination
         			'reverse_top_level' => false
 				) );
 			?>
-		</ol><!-- .comment-list -->
+		</ul><!-- .comment-list -->
 
 		<?php
 			// Are there comments to navigate through?
@@ -44,19 +44,19 @@
 	<?php
 		$args_comment = array(
 			'fields' => apply_filters( 'comment_form_default_fields', array(
-    			'author' => '' . '' . __( 'Your Name' ) . '' . ( $req ? '<span>*</span>' : '' ) . '<input id="author" name="author" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author'] ) . '" "' . $aria_req . ' />' . '<br>',
+    			'author' => '<div class="row"><div class="col-md-4">' . __( 'Your Name' ) . '' . ( $req ? ' <span>*</span>' : '' ) . '<input id="author" name="author" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author'] ) . '" "' . $aria_req . ' />' . '</div>',
 
-    			'email'  => '' . '' . __( 'Your Email' ) . '' . ( $req ? '<span>*</span>' : '' ) . '<input id="email" name="email" type="text" class="form-control" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />' . '<br>',
+    			'email'  => '<div class="col-md-4">' . __( 'Your Email' ) . '' . ( $req ? ' <span>*</span>' : '' ) . '<input id="email" name="email" type="text" class="form-control" value="' . esc_attr(  $commenter['comment_author_email'] ) . '" size="30"' . $aria_req . ' />' . '</div>',
     
-    			'url' => '' . __( 'Web / Blog', 'domainreference' ) . '' . '<input id="url" name="url" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author_url'] ) . '" /> <br>') ),
+    			'url' => '<div class="col-md-4">' . __( 'Web / Blog', 'domainreference' ) . '' . '<input id="url" name="url" type="text" class="form-control" value="' . esc_attr( $commenter['comment_author_url'] ) . '" /> </div></div>') ),
 
-			'comment_field' => '' . _x( 'Comment', 'noun' ) . '<textarea id="comment" class="form-control" name="comment" aria-required="true" rows="3"></textarea>',
+			'comment_field' => '<div class="row"><div class="col-md-12">' . _x( 'Comment', 'noun' ) . '<textarea id="comment" class="form-control" name="comment" aria-required="true" rows="3"></textarea></div></div>',
 
 			'comment_notes_before' => '<div class="alert alert-danger">' . __( 'Your email address will not be published.' ) . ( $req ? $required_text : '' ) . '</div>',
 
-			'class_submit' => 'btn btn-flat btn-primarys',
+			'class_submit' => 'btn btn-flat btn-brand-accent',
 		);
 		comment_form($args_comment); 
 	?>
-
+</section>
 </div><!-- #comments -->

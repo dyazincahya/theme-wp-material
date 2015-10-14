@@ -15,128 +15,38 @@ This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
 
-
-/* =WordPress Core
--------------------------------------------------------------- */
-.alignnone {
-    margin: 5px 20px 20px 0;
+.front-page{
+	background-color: #3949ab;
+	color:#FFFFFF;
+	padding-top:100px;
 }
-
-.aligncenter,
-div.aligncenter {
-    display: block;
-    margin: 5px auto 5px auto;
-}
-
-.alignright {
-    float:right;
-    margin: 5px 0 20px 20px;
-}
-
-.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignright {
-    float: right;
-    margin: 5px 0 20px 20px;
-}
-
-a img.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-a img.alignleft {
-    float: left;
-    margin: 5px 20px 20px 0;
-}
-
-a img.aligncenter {
-    display: block;
-    margin-left: auto;
-    margin-right: auto
-}
-
-.wp-caption {
-    background: #fff;
-    border: 1px solid #f0f0f0;
-    max-width: 96%; /* Image does not overflow the content area */
-    padding: 5px 3px 10px;
-    text-align: center;
-}
-
-.wp-caption.alignnone {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignleft {
-    margin: 5px 20px 20px 0;
-}
-
-.wp-caption.alignright {
-    margin: 5px 0 20px 20px;
-}
-
-.wp-caption img {
-    border: 0 none;
-    height: auto;
-    margin: 0;
-    max-width: 98.5%;
-    padding: 0;
-    width: auto;
-}
-
-.wp-caption p.wp-caption-text {
-    font-size: 11px;
-    line-height: 17px;
-    margin: 0;
-    padding: 0 4px 5px;
-}
-
-/* Text meant only for screen readers. */
-.screen-reader-text {
-	clip: rect(1px, 1px, 1px, 1px);
-	position: absolute !important;
-	height: 1px;
-	width: 1px;
-	overflow: hidden;
-}
-
-.screen-reader-text:focus {
-	background-color: #f1f1f1;
-	border-radius: 3px;
-	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	clip: auto !important;
-	color: #21759b;
-	display: block;
-	font-size: 14px;
-	font-size: 0.875rem;
-	font-weight: bold;
-	height: auto;
-	left: 5px;
-	line-height: normal;
-	padding: 15px 23px 14px;
-	text-decoration: none;
-	top: 5px;
-	width: auto;
-	z-index: 100000; /* Above WP toolbar. */
-}
-
 /****widget****/
 .widget { 
 	list-style:none;
 }
 
 .widgettitle{
+	line-height: 0px;
+	padding-bottom: 5px;
 	font-size:25px;
 	font-weight:bold;
 }
 
+.widget_recent_comments{ }
 
-.menu .menu-item{
-	display:inline-block;
+.recentcomments{
+	color:#FFFFFF;
 }
+
+span .comment-author-link{
+	font-weight:bold;
+}
+
+.recentcomments a{
+	color:#ffffff;
+}
+
+.menu .menu-item{ }
 
 input#submit{
 	background:none;
@@ -145,32 +55,45 @@ input#submit{
 
 textarea#comment{}
 
-div.comment-body{
-	background-color: #546e7a;
-	color:#FFFFFF;
-	padding:20px;
+span.front-avatar img.avatar{
+	border-radius:50%;
+	height:100px;
+	width:100px;
 }
 
-img.avatar{
-	border-radius:50px;
-}
-
-.comment-reply-title{
-	font-size:25px;
-	background-color: #795548;
-	color:#FFFFFF;
+/**** COMMENTS ***/
+.comment-author{
+	text-align: center;
+	float: left;
+	clear: both;
 	padding:10px;
+	margin-right: 10px;
+	border-right: 1px solid #ff4081;
+}
+
+.comment-list, .children { 
+	list-style:none;
+}
+
+div.comment-body{
+	padding: 20px;
+	border: 1px solid #e1e1e1;
 	border-radius: 3px;
 }
 
+/**** FOOTER ***/
+footer.footer{
+	background: #FFFFFF;
+}
+
+/**** HEADER ***/
+div.sidebar_left{
+	padding-left: 25px;
+}
+
+/*** SINGLE PAGE ***/
 .wp-post-image{
-	float:left;
-	padding-right: 20px;
-	padding-bottom: 10px;
+	float: left;
+	padding-right : 20px;\
+	clear: both;
 }
-
-div.content-single p{
-	font-size: 16px;
-}
-
-

@@ -1,31 +1,31 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>
-    <?php bloginfo('description'); ?> — <?php bloginfo('name');?>
-  </title>
-  <?php wp_head();?>
-  <style type="text/css">
-    p{color:#FFFFFF;}
-    p a{color:#FFFFFF;font-weight:bold;}
-  </style>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+	<title><?php bloginfo('description'); ?> — <?php bloginfo('name');?></title>
+	<?php wp_head();?>
 </head>
-<body background="<?php echo get_stylesheet_directory_uri();?>/images/front-background.jpg">
-  <div class="container" style="margin-top:100px;text-align:center;">
-    <h1 style="padding:20px;"><?php bloginfo('name');?></h1>
-    <div class="jumbotron" style="text-align:center;">
-      <?php get_search_form();?>
-    </div>
-    <p style="color:#FFFFFF;">
-      <a href="" style="color:#FFFFFF;">Kang-cahya</a> . 
-      <a href="" style="color:#FFFFFF;">CDO</a> . 
-      2015 . 
-      <a href="" style="color:#FFFFFF;">Wordpress</a>
-    </p>
-  </div>
-
-  <footer class="page-footer">
-  </footer>
-  <?php wp_footer();?>
-</body>
-</html>
+<body class="front-page">
+	<div class="container" align="center">
+		<div class="row" align="center">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<span class="front-avatar"><?php echo get_avatar( 1 ); ?></span>
+				<h3><?php echo get_the_author_meta("nickname", 1);?></h3>
+				<form role="search" method="get" action="<?php echo home_url( '/' ); ?>">
+					<div class="media">
+						<div class="media-object pull-left">
+							<label class="form-icon-label"><span class="icon">search</span></label>
+						</div>
+						<div class="media-inner">
+							<input class="form-control" type="search" placeholder="Search my archive..." value="<?php echo get_search_query() ?>" name="s" style="color:#FFF;">
+						</div>
+					</div>
+				</form>
+				<p><a href="<?php echo home_url('/blog');?>" class="btn btn-brand-accent">Go To Blog</a></p>
+			</div>
+			<div class="col-md-3"></div>
+		</div>
+ 	</div>
+<?php get_footer(); ?>
